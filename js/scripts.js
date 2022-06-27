@@ -53,7 +53,7 @@ const obj = {
 // console.log(result);
 
 // const answer = prompt('Вам уже есть 18 лет?', '');
-// console.log(typeof (answer)); // Всегда получаем только строку
+// console.log(typeof (answer)); // ! Всегда получаем только строку
 
 const answers = [];
 
