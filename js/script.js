@@ -113,3 +113,9 @@ const checker = false,
   closers = false;
 
 console.log(checker || !closers); // ! Оператор ! означает отрицание, и в данном случае вернёт true
+
+
+// ! УСЛОВИЯ 
+if (4 == 9) {
+  console.log('ok');
+}
