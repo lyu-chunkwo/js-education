@@ -23,6 +23,28 @@ const arrObj = {
   2: 'c'
 };
 
+// ! МЕТОДЫ МАССИВОВ
+
+const array = [1, 2, 3, 4, 5];
+const array2 = [1, 2, 3, 4, 5];
+
+array.pop(); // ! Отсекает последний элемент массива
+array2.push(8, 5, 7); // ! Добавляет один или несколько элементов в конец массива
+console.log(array);
+console.log(array2);
+
+for (let i = 0; i < array2.length; i++) { // ! Перебор массива обычным циклом
+  console.log(array2[i]);
+}
+
+for (const iterator of array2) { // ! Перебор массива циклом for of (работает только с массивами),здесь работают break и continue
+  console.log(iterator);
+}
+
+array2.forEach(function (item, i, array2) {  // ! foReach перебирает массив и принимает три аргумента. Не работают break и continue
+  console.log(`${i}: ${item} внутри массива ${array2}`);
+});
+
 // ! Получение данных из массива
 console.log(arr[1]);
 
@@ -44,6 +66,42 @@ const obj = {
   Anna: 500,
   Alice: 800
 };
+
+// ! ДЕСТРУКТУРИЗАЦИЯ ОБЪЕКТОВ
+// todo Использование цикла for in для перебора обЪекта
+
+const options = {
+  name: 'styles',
+  width: 1024,
+  height: 1024,
+  colors: {
+    border: 'black',
+    background: 'red'
+  },
+  makeTest: function () {
+    console.log('My new method');
+  }
+};
+
+const { border, background } = options.colors;
+console.log(border);
+
+for (let key in options) {
+  if (typeof (options[key]) === 'object') {
+    for (let i in options[key]) {
+      console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+    }
+  } else {
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+  }
+}
+
+// ! КАК УЗНАТЬ КОЛИЧЕСТВО ЭЛЕМЕНТОВ В ОБЪЕКТЕ
+// todo Так как у объектов нет свойства length узнать количество элементов можно при помощи свойства объекта - Object.keys(), это свойство возвращает все ключи в объекте в виде массива, а уже к массиву мы можем применить свойство length
+
+console.log(Object.keys(options).length);
+
+options.makeTest();
 
 
 // ! Команды для взаимодействия с пользователем

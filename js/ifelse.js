@@ -19,7 +19,7 @@ if (num < 49) {
 }
 
 // ! Ещё вариант
-(num === 50) ? console.log('Ok!') : console.log('Error');
+(num === 50) ? console.log('Ok!') : console.log('Error!');
 
 // ! SWITCH
 
@@ -51,6 +51,8 @@ if (hamburger && fries) {
 }
 
 console.log((hamburger && fries)); // ! Вернёт булево значение
+
+// ! Сущности которые всегда вернут false - 0, '', null, undefined, NaN
 
 
 const burger = 2;
@@ -137,7 +139,7 @@ const acola = 0;
 const anuggets = 2;
 
 if (ahamburger === 3 && acola || afries === 3 && anuggets) {
-  console.log('Done!')
+  console.log('Done!');
 }
 
 
@@ -147,7 +149,7 @@ const ucola = 0;
 const unuggets = 2;
 
 if (uhamburger && ucola || ufries === 3 && unuggets) {
-  console.log('Done!')
+  console.log('Done!');
 } else {
   console.log('Error');
 }

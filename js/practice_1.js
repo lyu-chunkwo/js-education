@@ -1,10 +1,9 @@
 "use strict";
 
-
-const numberOfFinms = +prompt('Сколько фильмов Вы уже просмотрели?', '');
+const numberOfFilms = +prompt('Сколько фильмов Вы уже просмотрели?', '');
 
 const personalMovieDB = {
-  count: numberOfFinms,
+  count: numberOfFilms,
   movies: {},
   actors: {},
   genres: [],

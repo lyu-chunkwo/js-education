@@ -2,21 +2,21 @@
 
 let num = 50;
 
-// while (num <= 55) {
-//   console.log(num);
-//   num++;
-// }
+while (num <= 55) {
+  console.log(num);
+  num++;
+}
 
-// do {
-//   console.log(num);
-//   num++;
-// }
-// while (num <= 55);
+do {
+  console.log(num);
+  num++;
+}
+while (num <= 55);
 
-// for (let i = 1; i < 8; i++) {
-//   console.log(num);
-//   num++;
-// }
+for (let i = 1; i < 8; i++) {
+  console.log(num);
+  num++;
+}
 
 // ! Прерывание итерации
 for (let i = 0; i <= 10; i++) {
@@ -126,3 +126,58 @@ function fifthTask() {
   console.log(arrayOfNumbers);
   return arrayOfNumbers;
 }
+
+let numb = 5;
+while (numb <= 10) {
+  console.log(numb);
+  numb++;
+}
+
+for (let i = 20; i > 10; i--) {
+  if (i === 13) {
+    break;
+  }
+  console.log(i);
+}
+
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+
+let arr = [4, 8, 20, 35, 57];
+let results = [];
+
+for (let i = 0; i < arr.length; i++) {
+  results[i] = arr[i];
+}
+console.log(results);
+
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+for (let i = 0; i < data.length; i++) {
+
+  if (typeof (data[i]) === 'number') {
+
+    data[i] = data[i] * 2;
+
+  } else if (typeof (data[i]) === 'string') {
+
+    data[i] = `${data[i]} - done`;
+
+  }
+}
+console.log(data);
+
+
+const date = [5, 10, 'Shopping', 20, 'Homework'];
+const resalt = [];
+
+for (let i = 1; i <= date.length; i++) {
+  resalt[i - 1] = date[date.length - i];
+}
+
+console.log(resalt);
